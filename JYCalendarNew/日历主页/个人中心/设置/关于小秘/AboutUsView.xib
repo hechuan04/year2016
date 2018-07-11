@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutUsView">
+            <connections>
+                <outlet property="bottomConstraint" destination="EoA-W1-iQe" id="VlQ-dX-kJM"/>
+                <outlet property="descLabel" destination="DLx-fj-hS3" id="bMs-Bz-jRj"/>
+                <outlet property="gyqImageview" destination="Sq7-AR-Lft" id="RLc-uF-EER"/>
+                <outlet property="lnycImageview" destination="MHs-DN-jbE" id="Sef-HI-J8W"/>
+                <outlet property="versionLabel" destination="9Sf-Zd-CeY" id="XRm-tW-N2w"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4TC-3y-csu">
+                    <rect key="frame" x="0.0" y="1" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.94766528080000001" green="0.91559499860000004" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="uvk-Zk-9Mo"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="小秘版本1.0.png" translatesAutoresizingMaskIntoConstraints="NO" id="CNP-Q1-N3p">
+                    <rect key="frame" x="0.0" y="4" width="320" height="190"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="CNP-Q1-N3p" secondAttribute="height" multiplier="32:19" id="goS-AM-Tu8"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2XV-pY-qR9">
+                    <rect key="frame" x="8" y="435" width="304" height="70"/>
+                    <subviews>
+                        <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="跳转观音签.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sq7-AR-Lft">
+                            <rect key="frame" x="79" y="4" width="44" height="61"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Sq7-AR-Lft" secondAttribute="height" multiplier="44:61" id="vNJ-IZ-ypF"/>
+                            </constraints>
+                        </imageView>
+                        <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="跳转流年运程.png" translatesAutoresizingMaskIntoConstraints="NO" id="MHs-DN-jbE">
+                            <rect key="frame" x="181" y="4" width="44" height="61"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="MHs-DN-jbE" secondAttribute="height" multiplier="44:61" id="bae-WH-sqJ"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="MHs-DN-jbE" secondAttribute="bottom" constant="5" id="DdO-U7-ctO"/>
+                        <constraint firstAttribute="trailing" secondItem="MHs-DN-jbE" secondAttribute="trailing" constant="79" id="EXT-hI-IKB"/>
+                        <constraint firstItem="Sq7-AR-Lft" firstAttribute="top" secondItem="2XV-pY-qR9" secondAttribute="top" constant="4" id="SzS-bf-8AL"/>
+                        <constraint firstItem="MHs-DN-jbE" firstAttribute="top" secondItem="2XV-pY-qR9" secondAttribute="top" constant="4" id="afp-Mu-BMA"/>
+                        <constraint firstAttribute="bottom" secondItem="Sq7-AR-Lft" secondAttribute="bottom" constant="5" id="cM0-Ht-2fE"/>
+                        <constraint firstAttribute="width" secondItem="2XV-pY-qR9" secondAttribute="height" multiplier="152:35" id="ciH-uj-Ioq"/>
+                        <constraint firstItem="Sq7-AR-Lft" firstAttribute="leading" secondItem="2XV-pY-qR9" secondAttribute="leading" constant="79" id="nk8-TN-Ubm"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="更多产品.png" translatesAutoresizingMaskIntoConstraints="NO" id="dBa-qS-D9T">
+                    <rect key="frame" x="28" y="406" width="264" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="dBa-qS-D9T" secondAttribute="height" multiplier="132:7" id="C9w-5w-egb"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 小秘版本1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Sf-Zd-CeY">
+                    <rect key="frame" x="116" y="158" width="89" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 除了关心 ，还有更多" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIB-tf-God">
+                    <rect key="frame" x="79" y="183" width="162" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@金源互动\n小秘©2016. JINYUAN TECHNOLOGY" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLx-fj-hS3">
+                    <rect key="frame" x="30" y="535" width="260" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="260" id="eqf-ye-Prr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="9Sf-Zd-CeY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2LI-lf-ymS"/>
+                <constraint firstAttribute="trailing" secondItem="2XV-pY-qR9" secondAttribute="trailing" constant="8" id="8zB-WF-kX1"/>
+                <constraint firstItem="dBa-qS-D9T" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="28" id="Dcl-LA-GWO"/>
+                <constraint firstItem="kIB-tf-God" firstAttribute="bottom" secondItem="CNP-Q1-N3p" secondAttribute="bottom" constant="10" id="EoA-W1-iQe"/>
+                <constraint firstItem="CNP-Q1-N3p" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="4" id="GSs-sF-5te"/>
+                <constraint firstItem="2XV-pY-qR9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="IUj-Eb-t1A"/>
+                <constraint firstAttribute="trailing" secondItem="dBa-qS-D9T" secondAttribute="trailing" constant="28" id="NfI-07-PZC"/>
+                <constraint firstItem="CNP-Q1-N3p" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PAD-wy-8Th"/>
+                <constraint firstAttribute="bottom" secondItem="DLx-fj-hS3" secondAttribute="bottom" constant="20" id="UVj-s0-s93"/>
+                <constraint firstItem="DLx-fj-hS3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bnD-RQ-fb0"/>
+                <constraint firstAttribute="trailing" secondItem="CNP-Q1-N3p" secondAttribute="trailing" id="ccD-qE-PZH"/>
+                <constraint firstItem="DLx-fj-hS3" firstAttribute="top" secondItem="2XV-pY-qR9" secondAttribute="bottom" constant="30" id="dS2-AW-geV"/>
+                <constraint firstItem="kIB-tf-God" firstAttribute="top" secondItem="9Sf-Zd-CeY" secondAttribute="bottom" constant="5" id="mNQ-lo-bkH"/>
+                <constraint firstItem="kIB-tf-God" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="o1h-ZC-bfK"/>
+                <constraint firstItem="4TC-3y-csu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="1" id="oMW-TZ-HBh"/>
+                <constraint firstItem="4TC-3y-csu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="p19-3r-J2b"/>
+                <constraint firstAttribute="trailing" secondItem="4TC-3y-csu" secondAttribute="trailing" id="syg-Qs-1aJ"/>
+                <constraint firstItem="2XV-pY-qR9" firstAttribute="top" secondItem="dBa-qS-D9T" secondAttribute="bottom" constant="15" id="v0P-Qn-5Dn"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="140" y="130"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="小秘版本1.0.png" width="606" height="437"/>
+        <image name="更多产品.png" width="570" height="29"/>
+        <image name="跳转流年运程.png" width="80" height="111"/>
+        <image name="跳转观音签.png" width="80" height="111"/>
+    </resources>
+</document>

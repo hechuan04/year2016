@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellForSet" id="KGk-i7-Jjw" customClass="TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lse-Ex-kSG">
+                        <rect key="frame" x="15" y="15" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Lse-Ex-kSG" secondAttribute="height" multiplier="1:1" id="bvE-4i-OXZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昵称" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9WL-11-iMl">
+                        <rect key="frame" x="99" y="24" width="207" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="207" id="3Su-HT-GXG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小秘号：346607313" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qO-t4-MTX">
+                        <rect key="frame" x="99" y="60" width="156" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="156" id="JJ9-7S-YXX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="464-7l-dLZ">
+                        <rect key="frame" x="256" y="35" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="464-7l-dLZ" secondAttribute="height" multiplier="1:1" id="5I2-dt-CQ4"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="464-7l-dLZ" secondAttribute="trailing" constant="34" id="3tI-yf-Eer"/>
+                    <constraint firstItem="Lse-Ex-kSG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Cep-6e-6OZ"/>
+                    <constraint firstItem="9WL-11-iMl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="J6o-am-9h0"/>
+                    <constraint firstAttribute="bottom" secondItem="Lse-Ex-kSG" secondAttribute="bottom" constant="14.5" id="ML4-tN-Wzf"/>
+                    <constraint firstItem="9WL-11-iMl" firstAttribute="leading" secondItem="Lse-Ex-kSG" secondAttribute="trailing" constant="14" id="NBO-MH-64D"/>
+                    <constraint firstAttribute="bottom" secondItem="464-7l-dLZ" secondAttribute="bottom" constant="34.5" id="WRb-MV-IVB"/>
+                    <constraint firstItem="1qO-t4-MTX" firstAttribute="leading" secondItem="Lse-Ex-kSG" secondAttribute="trailing" constant="14" id="YMK-IO-orE"/>
+                    <constraint firstItem="464-7l-dLZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="35" id="aXf-JZ-fLn"/>
+                    <constraint firstItem="Lse-Ex-kSG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="egT-vH-YTv"/>
+                    <constraint firstAttribute="bottom" secondItem="1qO-t4-MTX" secondAttribute="bottom" constant="21.5" id="piD-mD-l7T"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="barImage" destination="464-7l-dLZ" id="WmR-fc-Fxw"/>
+                <outlet property="userHead" destination="Lse-Ex-kSG" id="J42-RK-Att"/>
+                <outlet property="userName" destination="9WL-11-iMl" id="RKT-jO-5dJ"/>
+                <outlet property="userNumber" destination="1qO-t4-MTX" id="GvM-1w-qmc"/>
+            </connections>
+            <point key="canvasLocation" x="125" y="217"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Default.png" width="12" height="12"/>
+    </resources>
+</document>

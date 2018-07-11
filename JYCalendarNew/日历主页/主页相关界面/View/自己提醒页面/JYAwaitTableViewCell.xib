@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="strForAlreadyCell" id="KGk-i7-Jjw" customClass="JYAwaitTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="他人发送闹钟.png" translatesAutoresizingMaskIntoConstraints="NO" id="UbH-sS-vk1">
+                        <rect key="frame" x="295" y="34" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="Q07-zM-jdS"/>
+                            <constraint firstAttribute="width" constant="15" id="jfh-lW-VzW"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="闹钟.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZYr-2H-nmE">
+                        <rect key="frame" x="278" y="34" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="Jj7-It-Wqu"/>
+                            <constraint firstAttribute="height" constant="15" id="qMP-gA-fAe"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上午 10:25" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kd-Ja-8U4">
+                        <rect key="frame" x="128" y="8" width="182" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="182" id="N8H-3z-q7B"/>
+                            <constraint firstAttribute="height" constant="21" id="wBm-tm-okm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="闹钟.png" translatesAutoresizingMaskIntoConstraints="NO" id="sjV-ED-lvC">
+                        <rect key="frame" x="278" y="22" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="EzP-g6-i4B"/>
+                            <constraint firstAttribute="width" constant="15" id="Myz-wh-sdF"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="他人发送闹钟.png" translatesAutoresizingMaskIntoConstraints="NO" id="o0B-bH-p8q">
+                        <rect key="frame" x="295" y="22" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="9oD-Cy-j3l"/>
+                            <constraint firstAttribute="height" constant="15" id="Pjq-cJ-D2p"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="默认状态.png" translatesAutoresizingMaskIntoConstraints="NO" id="rzG-rd-1s0">
+                        <rect key="frame" x="10" y="17" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="rzG-rd-1s0" secondAttribute="height" multiplier="1:1" id="rjP-1l-li2"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1kd-Ja-8U4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="2b1-Wx-FD4"/>
+                    <constraint firstItem="rzG-rd-1s0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="2zf-hn-4Sq"/>
+                    <constraint firstAttribute="trailing" secondItem="UbH-sS-vk1" secondAttribute="trailing" constant="10" id="CPe-oQ-moG"/>
+                    <constraint firstAttribute="bottom" secondItem="o0B-bH-p8q" secondAttribute="bottom" constant="22.5" id="Dc7-Ao-BnW"/>
+                    <constraint firstAttribute="trailing" secondItem="1kd-Ja-8U4" secondAttribute="trailing" constant="10" id="QmD-pu-eYF"/>
+                    <constraint firstAttribute="bottom" secondItem="UbH-sS-vk1" secondAttribute="bottom" constant="10.5" id="VeJ-i1-zJd"/>
+                    <constraint firstItem="o0B-bH-p8q" firstAttribute="leading" secondItem="sjV-ED-lvC" secondAttribute="trailing" constant="2" id="WKq-Ar-8hJ"/>
+                    <constraint firstItem="sjV-ED-lvC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="WbT-1a-9RA"/>
+                    <constraint firstItem="rzG-rd-1s0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="eiz-eZ-1nY"/>
+                    <constraint firstItem="o0B-bH-p8q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="g5J-iI-aUb"/>
+                    <constraint firstAttribute="bottom" secondItem="sjV-ED-lvC" secondAttribute="bottom" constant="22.5" id="gEw-yg-NeY"/>
+                    <constraint firstItem="UbH-sS-vk1" firstAttribute="leading" secondItem="ZYr-2H-nmE" secondAttribute="trailing" constant="2" id="iQi-Vk-n6r"/>
+                    <constraint firstAttribute="trailing" secondItem="o0B-bH-p8q" secondAttribute="trailing" constant="10" id="lgN-5c-7hM"/>
+                    <constraint firstAttribute="bottom" secondItem="rzG-rd-1s0" secondAttribute="bottom" constant="17.5" id="oZC-Zs-Rxh"/>
+                    <constraint firstAttribute="bottom" secondItem="ZYr-2H-nmE" secondAttribute="bottom" constant="10.5" id="zYF-YS-Wdw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="centerClock" destination="sjV-ED-lvC" id="CuN-tD-cVD"/>
+                <outlet property="centerOtherClock" destination="o0B-bH-p8q" id="iLe-he-OVc"/>
+                <outlet property="clockImage" destination="ZYr-2H-nmE" id="efl-TZ-UmB"/>
+                <outlet property="otherClock" destination="UbH-sS-vk1" id="QiK-0l-G3u"/>
+                <outlet property="selectImage" destination="rzG-rd-1s0" id="pe5-Ye-Po0"/>
+                <outlet property="timeLabel" destination="1kd-Ja-8U4" id="f8C-e4-grx"/>
+            </connections>
+            <point key="canvasLocation" x="187" y="291"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="他人发送闹钟.png" width="34" height="34"/>
+        <image name="闹钟.png" width="34" height="34"/>
+        <image name="默认状态.png" width="50" height="50"/>
+    </resources>
+</document>

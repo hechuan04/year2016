@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="toBindWeiboController">
+            <connections>
+                <outlet property="bingWeiboBtn" destination="SE1-tR-3SH" id="kZZ-8A-TPm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SE1-tR-3SH">
+                    <rect key="frame" x="8" y="288" width="304" height="36"/>
+                    <color key="backgroundColor" red="1" green="0.22376391059352896" blue="0.14901226738151996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="SE1-tR-3SH" secondAttribute="height" multiplier="76:9" id="7qb-h1-qS8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="绑定微博好友">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="bindWeibo:" destination="-1" eventType="touchUpInside" id="Avr-b7-HSk"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还没有匹配微博好友" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6o-0B-O0b">
+                    <rect key="frame" x="13" y="189" width="294" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="e6o-0B-O0b" secondAttribute="height" multiplier="147:16" id="jGe-BW-sV7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="匹配您的微博好友，可以找到使用小秘的朋友，并给他们设置提醒。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBc-S5-BCs">
+                    <rect key="frame" x="13" y="229" width="294" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="vBc-S5-BCs" secondAttribute="height" multiplier="147:23" id="L5r-nf-RmI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone.png" translatesAutoresizingMaskIntoConstraints="NO" id="kEa-rh-yLh">
+                    <rect key="frame" x="129" y="37" width="63" height="123"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="123" id="5XN-ma-N0H"/>
+                        <constraint firstAttribute="width" constant="63" id="sKg-rj-YSk"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Len-rd-7Vj">
+                    <rect key="frame" x="0.0" y="1" width="320" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Len-rd-7Vj" secondAttribute="height" multiplier="320:1" id="Fip-bq-Yvf"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="SE1-tR-3SH" secondAttribute="trailing" constant="8" id="0XB-AR-puU"/>
+                <constraint firstAttribute="trailing" secondItem="e6o-0B-O0b" secondAttribute="trailing" constant="13" id="2sR-4t-TAu"/>
+                <constraint firstItem="kEa-rh-yLh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="37" id="8g6-LW-KzH"/>
+                <constraint firstAttribute="centerX" secondItem="kEa-rh-yLh" secondAttribute="centerX" id="8jM-sh-g13"/>
+                <constraint firstItem="e6o-0B-O0b" firstAttribute="top" secondItem="kEa-rh-yLh" secondAttribute="bottom" constant="29" id="ODr-p2-RKR"/>
+                <constraint firstAttribute="trailing" secondItem="Len-rd-7Vj" secondAttribute="trailing" id="QFv-cJ-3j3"/>
+                <constraint firstItem="Len-rd-7Vj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="1" id="S3K-fC-AwU"/>
+                <constraint firstItem="vBc-S5-BCs" firstAttribute="top" secondItem="e6o-0B-O0b" secondAttribute="bottom" constant="8" id="gmT-yA-KEV"/>
+                <constraint firstItem="Len-rd-7Vj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mzY-FZ-A0Y"/>
+                <constraint firstAttribute="trailing" secondItem="vBc-S5-BCs" secondAttribute="trailing" constant="13" id="qiY-07-QdF"/>
+                <constraint firstItem="e6o-0B-O0b" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="13" id="qj0-O0-Ug9"/>
+                <constraint firstItem="SE1-tR-3SH" firstAttribute="top" secondItem="vBc-S5-BCs" secondAttribute="bottom" constant="13" id="qog-dB-35B"/>
+                <constraint firstItem="vBc-S5-BCs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="13" id="uAZ-z2-cu1"/>
+                <constraint firstItem="SE1-tR-3SH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="w61-ak-RW9"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="phone.png" width="122" height="220"/>
+    </resources>
+</document>

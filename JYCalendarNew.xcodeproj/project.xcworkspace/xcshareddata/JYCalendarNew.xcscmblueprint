@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "cb92b67d-2287-4837-9791-e7ad52947dc3++434",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "cb92b67d-2287-4837-9791-e7ad52947dc3++434" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "cb92b67d-2287-4837-9791-e7ad52947dc3++434" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "38E910D7-661C-4EC7-A70F-3D93EB421541",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "cb92b67d-2287-4837-9791-e7ad52947dc3++434" : "%E5%B0%8F%E7%A7%982.0\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "JYCalendarNew",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "JYCalendarNew\/JYCalendarNew.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/code.taobao.org\/svn\/xuanji_ios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "cb92b67d-2287-4837-9791-e7ad52947dc3++434"
+    }
+  ]
+}
